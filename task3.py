@@ -10,10 +10,9 @@
 
 from typing import List
 
-
-def detect(looking_for: List[str], words_list: List[str]) -> bool:
-    check_list: list = [x for x in looking_for if any(x in bi for bi in words_list)]
-    if check_list == looking_for:
+def detect(biagrams_list: List[str], words_list: List[str]) -> bool:
+    check_list: list = [chunk for chunk in biagrams_list if any(chunk in word for word in words_list)]
+    if check_list == biagrams_list:
         return True
     return False
    
