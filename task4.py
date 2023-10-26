@@ -1,13 +1,13 @@
-# def check_list(interesting_list: list) -> bool:
-#     return all(i == interesting_list[0] for i in interesting_list)
+def check_list(interesting_list: list) -> bool:
+    return all(i == interesting_list[0] for i in interesting_list)
 
-# def add_alements(first_list: list, second_list: list):
-#     if len(first_list) == len(second_list):
-#         return check_list(list(map(lambda x: x[0] + x[1], list(zip(first_list, second_list)))))
-#     else:
-#         return "Two lists are not the same lenght"
+def add_alements(first_list: list, second_list: list):
+    if len(first_list) == len(second_list):
+        return check_list(list(map(lambda x: x[0] + x[1], list(zip(first_list, second_list)))))
+    else:
+        return "Two lists are not the same lenght"
     
-# print(add_alements([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]))
+print(add_alements([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]))
 
 # ==========================================================================
 # from typing import List
